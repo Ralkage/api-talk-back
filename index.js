@@ -7,8 +7,8 @@ app.use(express.json())
 app.post("/", (req, res) => {
   res.json({
     requestHeaders: req.headers,
-    requestBody: req.body,
     requestParams: req.query,
+    requestBody: req.body,
   })
 })
 
