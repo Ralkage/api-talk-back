@@ -4,7 +4,7 @@
     "name": "Christian Lopez",
     "url": "https://github.com/ralkage"
   },
-  "description": "A simple Express app that will accept any JSON POST request and return the request headers and body in the response.",
+  "description": "A simple yet sassy Express app that will talk back!",
   "keywords": ["express", "api", "echo"],
   "license": "MIT",
   "version": "0.0.0-development",
