@@ -1,16 +1,62 @@
+### Send Raw JSON Request
 POST http://localhost:4444/
 content-type: application/json
 
 {
-    "hello": "world"
+    "hello": "world",
+    "wordCount": 1,
+    "isPositive": true,
+    "anArrayOfObjects": [
+        {
+            "1": "one",
+            "one": 1
+        },
+        {
+            "2": "two",
+            "two": 2
+        }
+    ],
+    "aNestedObject": {
+        "three": {
+            "four": "five"
+        }
+    },
+    "anObjectWithAnArray": [
+        "six",
+        7,
+        "8"
+    ]
 }
 
-###
+### Send Query String Params
+POST http://localhost:4444?name=Billy%20Bob&age=33
 
-POST http://localhost:4444/
+### Send Raw JSON and Query String Params
+POST http://localhost:4444?name=Billy%20Bob&age=33
 content-type: application/json
 
 {
-    "name": "Billy Bob",
-    "age": "33"
+    "hello": "world",
+    "wordCount": 1,
+    "isPositive": true,
+    "anArrayOfObjects": [
+        {
+            "1": "one",
+            "one": 1
+        },
+        {
+            "2": "two",
+            "two": 2
+        }
+    ],
+    "aNestedObject": {
+        "three": {
+            "four": "five"
+        }
+    },
+    "anObjectWithAnArray": [
+        "six",
+        7,
+        "8"
+    ]
 }
